@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bingo Board </title>
+    <style>
+
+
+body {
+  background-color: rgb(30, 111, 100);
+  font-family: monospace;
+  color: white;
+}
+#square{
+    max-width: 850px;
+    margin-inline: auto;
+    border: 1px solid white;
+    height: 1200px;
+    border-radius: 25px;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <h1>Bingo Board</h1>
+    <div id="square">
+        <div id="bingo-box">
+       
+
+    </div>
+</div>
+
+      
+</body>
+<script>
+window.onLoadActions()
+
+function onLoadActions(){
+    for (let number = 1; number <= 76; number++) {
+    let numberNode = document.createElement("div");
+    console.log(numberNode);
+    numberNode.classList.add("number");
+    numberNode.innerText = number;
+    document.getElementById("bingo-box").appendChild(numberNode);
+  }
+}
+
+
+
+    
+</script>
